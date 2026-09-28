@@ -754,7 +754,7 @@ function drawWilliam(ctx, w, time) {
     if (!w.grounded) {
       frameIdx = w.vy < 0 ? 0 : 3;
     } else if (speedAbs > 0.35) {
-  const runFrames = [2, 1];
+  const runFrames = [2, 5, 4];
   frameIdx = runFrames[Math.floor(w.animFrame) % runFrames.length];
 }
 
